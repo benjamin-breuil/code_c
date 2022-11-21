@@ -2,7 +2,7 @@
   - Inventer au cours de l'années 1972
   - Plusieurs version (normes)
   - à été utiliser pour créer unix (ancêtre de linux), microsoft windows
-  
+  - Très facile de s'informer car populaire
 
 # C'est quoi le C ? :
   - Travail directement dans la mémoire 
@@ -17,6 +17,7 @@
   - Grande communauté (Populaire)
   - Compatible avec beaucoup de machine
   - Langage ouvert (appartiens à personne) (standard ouvert) (Modifiable)
+  - Très facile de s'informer car populaire
 
 # Désavantage :
   - Difficile de faire de la programmation orienter objet
@@ -137,8 +138,86 @@ int main(int argc, char *argv[])
 ```
 // ATTENTION à REGARDER CE QUE ça SIGNIFIE
 
+## Variables
+
+Variable = données stocker dans la ram
+
+Intérieur mémoire vive --> adresse = nombre qui permet à l'ordinateur de se repérer dans la mèmoire vive (commence par 0)
+
+chaque adresse on peut stocker une valeur (Adresse | Valeur)
+
+Ordinateur va chercher adresse pour connaître la valeur
+
+Une valeur : c'est le nombre qu'elle stocke, par exemple 5.
+
+Un nom : c'est ce qui permet de la reconnaître. En programmant en C, on n'aura pas à retenir l'adresse mémoire à la place, on va juste indiquer des noms de variables. C'est le compilateur qui fera la conversion entre le nom et l'adresse.
+
+Variable en C : camelCase, tiret_du_huit, minuscule
+
+**Il existe plusieur type de variable :** 
+
+Voici les principaux types de variables existant en langage C, que l'on peut classer en deux catégories :
+
+ceux qui permettent de stocker des nombres entiers : ```signed char```  , ```int```    ,   ```long``` ;
+
+ceux qui permettent de stocker des nombres décimaux (aussi appelés "nombres flottants") : ```float```  ,  ```double``` .
+
+Créer une variable :
+
+
+
+```c
+int age
+```
+Les variables ce déclare au debut d'une fonction
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main(int argc, char *argv[]) // Équivalent de int main()
+{
+  int age; 
+     
+  return 0;
+}
+```
+
+donner une valeur à la variable il faut indiquer le nom de la variable puis faire un signe égal et indiquer la valeur
+
+quand la variable est seulement déclarer la valeur peut être n'importe quoi si l'adresse mémoire n'a jamais été modifié, il peut avoir le reste d'un vieux programme.
+
+donc après avoir déclarer une variable il faut toujours lui affecté une valeur, pour être sûr que la valeur de la variable est correct
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main(int argc, char *argv[]) // Équivalent de int main()
+{
+  int age = 5;
+     
+  return 0;
+}
+```
+
+comment être sur qu'une variable a une valeur constance, devant le type mettre ```const```
+
+(par convention les const s'écrivent toujours en majuscule pour différencier les const des variabbles)
+
+```c
+const int AGE = 5;
+```
+
+**afficher une variable :**
+
+**Demande**
+
+Demander un chiffre ```scanf```
 
 # Lancer un programme en C depuis le terminal marche à suivre :
+
+# Compiler c'est quoi ?
 
 # Aide / Lien / Source
 
