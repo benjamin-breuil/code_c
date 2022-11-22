@@ -219,6 +219,50 @@ Demander un chiffre ```scanf```
 
 # Compiler c'est quoi ?
 
+# Raccourcie
+
+En C il existe des techniques permettant de raccourcir l'écriture d'une opérations ou des opératoins
+
+C'est pratique lorsque on a des opérations répétitives grâce à l'incrémentation
+
+```c
+int nombre = 2;
+
+nombre += 4; // nombre vaut 6...
+nombre -= 3; // ... nombre vaut maintenant 3
+nombre *= 5; // ... nombre vaut 15
+nombre /= 3; // ... nombre vaut 5
+nombre %= 3; // ... nombre vaut 2 (car 5 = 1 * 3 + 2)
+```
+# Conditions
+
+# Boucles 
+
+3 types de boucles
+
+  - while
+  - do while
+  - for
+
+```c
+while (/* Condition */)
+{
+    // Instructions à répéter
+}
+```
+
+```c
+int nombreEntre = 0;
+
+while (nombreEntre != 47)
+{
+    printf("Tapez le nombre 47 ! ");
+    scanf("%d", &nombreEntre);
+}
+```
+
+Faisons un test simple : on va demander à l'utilisateur de taper le nombre 47. Tant qu'il n'a pas tapé le nombre 47, on lui redemande le nombre. Le programme ne pourra s'arrêter que si l'utilisateur tape le nombre 47 
+
 # Aide / Lien / Source
 
 https://openclassrooms.com/en/courses/19980-apprenez-a-programmer-en-c/7669321-ecrivez-votre-premier-programme
