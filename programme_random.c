@@ -18,6 +18,19 @@ int main(int argc, char *argv[])
         printf("\n");
         printf("\n");
         scanf("%d", &chiffreUtilisateur);
+        if (chiffreUtilisateur < 1 || chiffreUtilisateur > 10)
+        {
+            do
+            {
+                printf("\n\nVous devez écrire un chiffre entre 1 et 10? Écrivez Y(es) or N(o) si vous voulez recommencer: ");
+                getchar();
+                response = getchar();
+                getchar();
+            } while (response == 'Y' || response == 'y');                // if response is Y or y then program runs again
+            printf("Merci d'avoir essayé ce programme. Au revoir!\n\n"); // if not Y or y, program terminates
+            return 0;
+        }
+
         printf("\n");
 
         if (chiffreUtilisateur != chiffreOrdinateur)
@@ -36,7 +49,7 @@ int main(int argc, char *argv[])
             printf("\n");
             printf("====================================\n");
         }
-        printf("\n\nvous pouvez réessayer? Écrivez Y(es) or N(o): ");
+        printf("\n\nvous vouvez réessayer? Écrivez Y(es) or N(o): ");
         getchar();
         response = getchar();
         getchar();
