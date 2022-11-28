@@ -28,15 +28,22 @@
   - Création d'utilitaire
   - Systèmes d'exploitation
   - Jeux vidéo
-  - Créer des applications (jeu, bureau, web, phone)
+  - Moins utiliser pour créer des applications (jeu, bureau, web, phone) car d'autre logiciel sont plus adaptées
 
 # Pourquoi utiliser :
+
+
+   
 # Comment ça marche : 
   - Langage de programmation impératif
   - Séquentiel
   - Chacune des tâches une par une jusqu'à la fin
 
-#
+# Caractéristique du C
+- Impératif, généraliste, simple ( impératif = principe de langage) 
+- Langage Bas niveau
+- Supporte les types énumérés, composé, opaque
+- Le C ne gére pas les objets, pas d'espace de nom
 #
 #
 
@@ -218,7 +225,11 @@ Demander un chiffre ```scanf```
 # Lancer un programme en C depuis le terminal marche à suivre :
 
 # Compiler c'est quoi ?
+# Switch
 
+Switch est une structure conditionel
+
+avec switch on peut uniquement traiter l'égaliter
 # Raccourcie
 
 En C il existe des techniques permettant de raccourcir l'écriture d'une opérations ou des opératoins
@@ -236,6 +247,16 @@ nombre %= 3; // ... nombre vaut 2 (car 5 = 1 * 3 + 2)
 ```
 # Conditions
 
+# Pourquoi préciser le type ?
+
+Quand on déclare une variable, la variable va réserver un bout de mémoire dans l'ordinateur et la taille du bout de mémoire varie en fonction du type
+
+```c
+char caractere; // 1 octet (8 bits) : -128 à 127
+unsigned char caractere; // 1 octet (8 bits) : 0 à 255
+int nombreEntier; // 2 à 4 octets : -32 768 à 32,767 ou de -2 147 483 648 à 2 147 483 647
+```
+
 # Boucles 
 
 3 types de boucles
@@ -243,6 +264,10 @@ nombre %= 3; // ... nombre vaut 2 (car 5 = 1 * 3 + 2)
   - while
   - do while
   - for
+
+## Boucles "while"
+
+While signifie "tant que"
 
 ```c
 while (/* Condition */)
@@ -261,7 +286,58 @@ while (nombreEntre != 47)
 }
 ```
 
-Faisons un test simple : on va demander à l'utilisateur de taper le nombre 47. Tant qu'il n'a pas tapé le nombre 47, on lui redemande le nombre. Le programme ne pourra s'arrêter que si l'utilisateur tape le nombre 47 
+Tant que le chiffre 47 est pas tapé le programme ne peut pas s'arrêter
+
+on va demander à l'utilisateur de taper le nombre 47. Tant qu'il n'a pas tapé le nombre 47, on lui redemande le nombre. Le programme ne pourra s'arrêter que si l'utilisateur tape le nombre 47 
+
+```c
+    while (compteur < 10)
+    {
+        printf("Bienvenue !\n");
+        compteur++;
+    }
+```
+
+```c
+  while (1)
+  {
+      printf("Boucle infinie\n");
+  }
+```
+
+La boucle est infinie car 1 = vrai et vu que la condition est toujours vrai la boucle ne s'arrêtera jamais
+
+Le programme ne s'arrête pas tant que le compteur n'est pas à 10, cela veut dire que le programme va imprimé 10 fois "Bienvenue"
+compteur++ sers a incrémenter +1 à chaque boucle c'est quand le chiffre va arriver a sa 10ème incrémentation que la boucle s'arrêtera
+
+## Boucles "do while"
+
+## Boucles "for"
+
+```c
+  int compteur;
+
+  for (compteur = 0 ; compteur < 10 ; compteur++)
+  {
+      printf("Bienvenue !\n");
+  }
+```
+## En résumé
+
+    Les boucles sont des structures qui nous permettent de répéter une série d'instructions plusieurs fois.
+
+    Il existe plusieurs types de boucles : while, do… while et for. Certaines sont plus adaptées que d'autres selon les cas.
+
+    "for" est probablement celle qu'on utilise le plus. On y fait très souvent des incrémentations ou des décrémentations de variables.
+# Booléen
+
+Vrai n'est pas true
+
+  true = 1  
+
+Faux n'est pas false
+
+  false = 0
 
 # Aide / Lien / Source
 
